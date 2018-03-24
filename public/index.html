@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The best NHL articles EVER</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <div class="jumbotron">
+        <h1 class="text-center">
+            <span class="glyphicon glyphicon-knight"></span> Get the Latest NHL articles!</h1>
+        <hr>
+        <h2 class="text-center">GO KINGS GO!</h2>
+        <br>
+        <div class="text-center">
+            <a href="/scrape">
+                <button type="button" class="btn btn-lg btn-primary">
+                    <span class="glyphicon glyphicon-list-alt"></span> Click to get the latest!</button>
+            </a>
+        </div>
+    </div>
+    <style>
+        body {
+            background-color: #F2F6D0
+        }
+
+        #wrapper {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 5%;
+        }
+
+        #articles {
+            display: inline-block;
+            overflow: auto;
+            width: 60%;
+            height: 700px;
+            background: silver;
+        }
+
+        #notes {
+            float: right;
+            width: 30%;
+        }
+
+        textarea,
+        input {
+            display: block;
+            width: 100%;
+            background-color: #FCF5C7;
+        }
+
+        input {
+            height: 36px;
+            font-size: 24px;
+        }
+
+        textarea {
+            height: 200px;
+            font-size: 18px;
+        }
+
+        body {
+            background: url('http://cdn.wallpapersafari.com/46/71/nkG4IM.png') no-repeat center center fixed!important;
+            background-size: cover;
+        }
+
+        button {
+            font-size: 30px;
+        }
+
+        .jumbotron {
+            background-color: silver;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="articles"></div>
+        <div id="notes"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
